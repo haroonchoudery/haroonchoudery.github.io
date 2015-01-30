@@ -1,233 +1,532 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="My personal portfolio website">
-    <meta name="author" content="Haroon Choudery">
-    <link rel="shortcut icon" href="img/favicon.ico"/>
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <!-- =========================================
+    head
+    ========================================== -->
+    <head>
 
-    <title>Haroon Choudery - Student Portfolio | Personal Blog | Other Stuff</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.css" rel="stylesheet">
+        <!-- =========================================
+        Basic
+        ========================================== -->
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>APP ON</title>
+        <meta name="keywords" content="APP ON, HTML5, CSS3, responsive, landing page, template" />
+        <meta name="author" content="Jthemes" />
+        <meta name="robots" content="index follow"/>
+        <meta name="description" content="APP ON - Responsive HTML5 / CSS3 Landing Page Template" />
 
-    <!-- Add custom CSS here -->
-    <link href="css/stylish-portfolio.css" rel="stylesheet">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
-  </head>
+        <!-- =========================================
+        Mobile Configurations
+        ========================================== -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <meta name="GOOGLEBOT" content="index follow"/>
+        <meta name="apple-mobile-web-app-capable" content="yes" />
 
-  <body>
+        <!-- =========================================
+        fav & icons for iPhone and iPad
+        ========================================== -->
+        <link rel="shortcut icon" href="images/icons/favicon.png" />
+        <link rel="apple-touch-icon-precomposed" href="images/icons/icon.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/icons/icon@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/icons/icon-72.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/icons/icon-72@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="60x60" href="images/icons/icon-60.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="120x120" href="images/icons/icon-60@2x.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="76x76" href="images/icons/icon-76.png" />
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="images/icons/icon-76@2x.png" />
 
-    <!-- Side Menu -->
-    <a id="menu-toggle" href="#" class="btn btn-primary btn-lg toggle"><i class="icon-reorder"></i></a>
-    <div id="sidebar-wrapper">
-      <ul class="sidebar-nav">
-        <a id="menu-close" href="#" class="btn btn-default btn-lg pull-right toggle"><i class="icon-remove"></i></a>
-        <li class="sidebar-brand"><a href="#">Welcome!</a></li>
-        <li><a href="#top">Home</a></li>
-        <li><a href="#intro">About Me</a></li>
-        <li><a href="#portfolio">Work History</a></li>
-        <li><a href="http://www.haroonchoudery.wordpress.com" target="_blank">Blog</a></li>
-        <li><a href="mailto:haroon.choudery@gmail.com?subject=Hello%20Haroon">Contact</a></li>
-      </ul>
-    </div>
-    <!-- /Side Menu -->
-  
-    <!-- Full Page Image Header Area -->
-    <div id="top" class="header">
-      <div class="vert-text">
-        <h1>Haroon Choudery</h1>
-        <h3><em>Avid </em>Student, <em>Natural </em>Businessman, <em>Ambitious </em>Dreamer</h3>
-        <a href="#intro" class="btn btn-default btn-lg">Learn About Me</a>
-      </div>
-    </div>
-    <!-- /Full Page Image Header Area -->
-  
-    <!-- Intro -->
-    <div id="intro" class="intro">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h2>About Me</h2>
-            <p class="lead">I am a currently enrolled college student with special interests in the fields of Economics and Technology.</p> 
-            <p>Having such an extraordinarily diverse set of academic interests allow me to have a very unique perspective in both the world of technology as well as the world of economics. My goals is to utilize my skills in both of these fields in a synergistic manner.</p>
-            <p>As for my background, I am a Pakistani native who found home in America at a very young age. I was raised in Brooklyn, New York and now currently reside on the Eastern Shore of Maryland. (See: "culture shock")</p>
-            <p>My interests and hobbies include watching/playing sports (especially cricket and soccer), working on art, and reading. I also enjoy working on my front-end website development and graphical design skills.</p>
-          </div>
+        <!-- =========================================
+        CSS
+        ========================================== -->
+        <link rel="stylesheet" media="screen" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" media="screen" href="css/style.css"/>
+
+        <!-- =========================================
+        Colors
+        ========================================== -->
+        <link rel="stylesheet" href="css/colors/main-color.css" id="color-switch"/>
+
+        <link rel="stylesheet" media="screen" href="StyleSwitcher/switcher.css" />
+
+        <!-- =========================================
+        Head Libs
+        ========================================== -->
+        <script type="text/javascript" src="js/vendor/modernizr.custom.js"></script>
+
+        <!-- =========================================
+        Google Analytics
+        ========================================== -->
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
+        <script type="text/javascript">
+                (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+                function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+                e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+                e.src='http://www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+                ga('create','UA-XXXXX-X', '_trackPageview');
+                ga('send','pageview');
+        </script>
+
+
+    </head><!-- /head -->
+
+
+
+
+    <!-- =========================================
+    body
+    ========================================== -->
+    <body>
+
+
+
+
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+
+
+
+        <!-- =========================================
+        Loader
+        ========================================== -->
+        <div id="Loader">
+            <div id="circle"></div>
+            <div id="circle1"></div>
         </div>
-      </div>
-    </div>
-    <!-- /Intro -->
-  
-    <!-- Services -->
-    <div id="services" class="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-2 col-md-offset-3 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-pencil"></i>
-              <h4>Student at Penn State</h4>
-              <p>Studying Economics with a minor in Information Sciences and Technology.</p>
+
+
+
+
+        <!-- =========================================
+        Menu Section
+        ========================================== -->
+        <section id="sidebar-menu">
+            <div id="sidebar-wrapper">
+                <div id="sidebar-scroller">
+                    <div id="sidebar-container">
+                        <div class="logo">
+                            <img src="images/logo.png" alt="Logo" />
+                        </div>
+                        <ul>
+                            <li><a href="#home-section" title="Home" class="scrollto">Home</a></li>
+                            <li><a href="#feature-section" title="Features" class="scrollto">Features</a></li>
+                            <li><a href="#works-section" title="How It Works" class="scrollto">How It Works</a></li>
+                            <li><a href="#portfolio-section" title="Screenshots" class="scrollto">Screenshots</a></li>
+                            <li><a href="#closer-section" title="APP View" class="scrollto">APP View</a></li>
+                            <li><a href="#team-section" title="Our Team" class="scrollto">Our Team</a></li>
+                            <li><a href="#moreapps-section" title="More APPs" class="scrollto">More APPs</a></li>
+                            <li><a href="#faq-section" title="Faqs" class="scrollto">Faqs</a></li>
+                            <li><a href="#clients-section" title="Testimonials" class="scrollto">Testimonials</a></li>
+                            <li><a href="#price-section" title="Pricing Tables" class="scrollto">Pricing Tables</a></li>
+                            <li><a href="#recent-section" title="Recent Posts" class="scrollto">Recent Posts</a></li>
+                            <li><a href="#reach-section" title="Contact Us" class="scrollto">Contact Us</a></li>
+                            <li><a href="#subscribe-section" title="Subscribe" class="scrollto">Subscribe</a></li>
+                        </ul>
+                        <div class="info">
+                            <p>(999) 888-1234</p>
+                            <p>name@yourdomain.com</p>
+                        </div>
+                    </div>
+                </div>
+                <a class="sidebar-btn" href="#"><i class="fa fa-bars"></i></a>
             </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-trophy"></i>
-              <h4>Bill Gates Millennium Scholar</h4>
-              <p>Attending college on a full-ride scholarship funded by the Gates Foundation.</p>
-            </div>
-          </div>
-          <div class="col-md-2 text-center">
-            <div class="service-item">
-              <i class="service-icon icon-laptop"></i>
-              <h4>MHacks Prize Recipient</h4>
-              <p>My team of four was awarded the largest sponsor prize at MHacks 2013, the largest student hackathon in the world.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Services -->
+            <div id="sidebar-overlayer"></div>
+        </section>
 
-    <!-- Callout -->
-    <div class="row">
-      <div class="col-md-12 hidden-xs">
-        <div class="callout">
-            <blockquote>“Success is determined not by whether or not you face obstacles, but by your reaction to them. And if you look at these obstacles as a containing fence, they become your excuse for failure. If you look at them as a hurdle, each one strengthens you for the next.”<footer><em>- Ben Carson</em></footer></blockquote>
-        </div>
-      </div>
-    </div>
-    <!-- /Callout -->
 
-    <!-- Portfolio -->
-    <div id ="portfolio" class="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-4 col-md-offset-4 text-center">
-            <h2>Work History</h2>
-            <hr>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ebay-logo.jpg">
-              <h4>eBay Inc.</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/ljt-and-associates-logo.jpg">
-              <h4>LJT & Associates Inc.</h4>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-md-offset-2 text-center">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/orbital-logo.jpg">
-              <h4>Orbital Sciences Corp.</h4>
-            </div>
-          </div>
-          <div class="col-md-4 text-center">
-            <div class="portfolio-item">
-              <img class="img-portfolio img-responsive" src="img/nasa-logo.jpg">
-              <h4>NASA</h4>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Portfolio -->
 
-    <!-- Call to Action -->
-    <div class="call-to-action">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <h3>Make sure to check out these awesome links:</h3>
-            <a href="http://www.triendly.com" target="_blank" class="btn btn-lg btn-default">My Startup</a>
-            <a href="http://haroonchoudery.wordpress.com" target="_blank" class="btn btn-lg btn-primary">My Blog</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- /Call to Action -->
 
-    <!-- Footer -->
-    <footer>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-md-offset-3 text-center">
-            <ul class="list-inline">
-              <li><a href="https://www.facebook.com/haroonchoudery" target="_blank"><i class="icon-facebook icon-2x"></i></a></li>
-              <li><a href="https://twitter.com/themonsoon7" target="_blank"><i class="icon-twitter icon-2x"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/haroonchoudery/" target="_blank"><i class="icon-linkedin icon-2x"></i></a></li>
-              <li><a rel="author" href="https://plus.google.com/+HaroonChoudery/"><i class="icon-google-plus icon-2x"></i></a></li>
-            </ul>
-            <hr>
-            <p>Copyright &copy; Haroon Choudery 2013</p>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- /Footer -->
+        <!-- =========================================
+        Home Section
+        ========================================== -->
+        <!-- home-section -->
+        <section id="home-section">
+            <!-- home-section-wrapper -->
+            <div id="home-section-wrapper">
 
-  <!-- Google Analytics API -->
-  <script type="text/javascript">
+                <!-- container -->
+                <div class="container">
+                    <!-- row -->
+                    <div class="row">
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-23369189-1']);
-  _gaq.push(['_setDomainName', 'haroonchoudery.com']);
-  _gaq.push(['_trackPageview']);
 
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
+                        <!-- col-md-12 -->
+                        <div class="col-md-12 no-pad-right no-pad-left">
 
-</script>
-  <!-- /Google Analytics API -->
 
-  <!-- Bootstrap core JavaScript -->
-  <!-- Placed at the end of the document so the pages load faster -->
-  <script src="js/jquery.js"></script>
-  <script src="js/bootstrap.js"></script>
+                            <!-- owl-home -->
+                            <div class="owl-home">
 
-  <!-- Custom JavaScript for the Side Menu - Put in a custom JS file if you want to clean this up -->
-  <script>
-      $("#menu-close").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-      $("#menu-toggle").click(function(e) {
-          e.preventDefault();
-          $("#sidebar-wrapper").toggleClass("active");
-      });
-  </script>
-  <script>
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-          if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
-              || location.hostname == this.hostname) {
+                                <!-- home-item -->
+                                <div class="home-item">
 
-            var target = $(this.hash);
-            target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-            if (target.length) {
-              $('html,body').animate({
-                scrollTop: target.offset().top
-              }, 1000);
-              return false;
-            }
-          }
-        });
-      });
-    </script>
+                                    <!-- col-md-7 -->
+                                    <div class="col-md-7">
 
-  </body>
+                                        <!-- slogan -->
+                                        <div class="slogan">
+                                            <h1>aNYCdote</h1>
+                                            <h2>The stories that make this city beautiful.</h2>
+                                        </div><!-- /slogan -->
 
-</html>
+                                        <!-- desc -->
+                                        <div class="desc">
+                                            <p>Subscribe to get an exclusive opportunity to try our app. </p>
+                                        </div><!-- /desc -->
+
+                                        <!-- buttons -->
+                                        <div class="buttons">
+                                            <a class="btn btn-medium btn-nesto-home scrollto" href="#subscribe-section" title="Subscribe">
+                                                Subscribe
+                                            </a>
+                                        </div><!-- /buttons -->
+
+                                    </div><!-- /col-md-7 -->
+
+                                    <!-- col-md-5 -->
+                                    <div class="col-md-5">
+
+                                        <!-- feature-home-image -->
+                                        <div class="feature-home-image">
+                                            <img src="images/slider/003.png" alt="Feature Image" />
+                                        </div><!-- /feature-home-image -->
+
+                                    </div><!-- /col-md-5 -->
+
+                                </div><!-- /home-item -->
+
+
+                            </div><!-- /owl-home -->
+
+
+                        </div><!-- /col-md-12 -->
+
+
+                    </div><!-- /row -->
+                </div><!-- /container -->
+
+            </div><!-- /home-section-wrapper -->
+        </section><!-- /home-section -->
+
+
+
+
+        <!-- =========================================
+        Feature Section
+        ========================================== -->
+        <!-- feature-section -->
+        <section id="feature-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>What is aNYCdote?</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>Simply put, aNYCdote is a tool that allows New Yorkers to connect with one-another in a way never done before. It is a platform where New Yorkers can listen to the stories of other New Yorkers, or share their own. The infinite stories are what makes New York the best city in the world. We just wanted to provide a way for New Yorkers to share them.</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                    <!-- col-md-4 -->
+                    <div class="col-md-12">
+
+                        <!-- feature-box-style-2 -->
+                        <div class="feature-box-style-2" data-uk-scrollspy="{cls:'uk-animation-fade', delay:500, repeat: true}">
+
+                            <!-- feature-icon -->
+                            <div class="feature-icon">
+                                <i class="fa fa-bullseye"></i>
+                            </div><!-- /feature-icon -->
+
+                            <!-- feature-title -->
+                            <div class="feature-title">
+                                <h4>Our Mission</h4>
+                            </div><!-- /feature-title -->
+
+                            <!-- feature-desc -->
+                            <div class="feature-desc">
+                                <p>We want to make New York more personal than ever. Every day, hundreds of thousands of New Yorkers roam the streets, passing by flocks of strangers. These stangers have countless stories to tell - some goofy, some exhilerating, and some heart-breaking. If us New Yorkers were given a chance to listen to the stories of the strangers around them, we could see these flocks of strangers in a much more personal way.</p>
+                            </div><!-- /feature-desc -->
+
+                        </div><!-- /feature-box-style-2 -->
+
+                    </div><!-- /col-md-4 -->
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /feature-section -->
+
+
+
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#works-section" title="How It Works" class="scrollto">
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <a href="#feature-section" title="Awesome Features" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+        <!-- =========================================
+        Subscribe Section
+        ========================================== -->
+        <!-- subscribe-section -->
+        <section id="subscribe-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>Subscribe</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>Add your email to the list to be considered for our Beta testing group. Disclaimer: Proud New Yorkers only.   :)</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                    <!-- subscribe -->
+                    <div id="subscribe" data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+
+                        <!-- form -->
+                        <form id="sform" method="post" action="php/news-letter.php">
+
+                            <!-- Contact Mail -->
+                            <div class="form-group">
+
+                                <div class="controls">
+                                    <input type="email" class="form-control email srequiredField" placeholder="Enter your email" name="semail">
+                                </div>
+
+                            </div><!-- /Contact Mail -->
+
+                            <!-- Subscribe Button -->
+                            <button type="submit" class="btn btn-lg submit">Subscribe</button>
+
+                        </form><!-- /form -->
+                    </div><!-- /subscribe -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /subscribe-section -->
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#price-section" title="Select Your Price" class="scrollto">
+                <i class="fa fa-angle-down"></i>
+            </a>
+            <a href="#clients-section" title="What Clients Say" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+
+ 		<!-- =========================================
+        Reach Section
+        ========================================== -->
+        <!-- reach-section -->
+        <section id="reach-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- section-title -->
+                        <div class="section-title" data-uk-scrollspy="{cls:'uk-animation-slide-top', delay:500, repeat: true}">
+                            <h1>Contact Us</h1>
+                        </div><!-- /section-title -->
+
+                        <!-- section-desc -->
+                        <div class="section-desc" data-uk-scrollspy="{cls:'uk-animation-fade', delay:700, repeat: true}">
+                            <p>Do you have any questions for us? Any comments or criticisms? Shoot us a message below and we'll get back to you.</p>
+                        </div><!-- /section-desc -->
+
+                    </div><!-- /col-md-12 -->
+
+
+
+                    <!-- form -->
+                    <form role="form" id="form" class="contactForm" method="post" action="php/send.php">
+
+
+                        <!-- Contact Name -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="text" class="form-control requiredField" placeholder="Your name * Required" name="name">
+                            </div>
+
+                        </div><!-- /Contact Name -->
+
+
+
+                        <!-- Contact Mail -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="email" class="form-control email requiredField" placeholder="Your email * Required" name="email">
+                            </div>
+
+                        </div><!-- /Contact Mail -->
+
+
+                        <!-- Contact Subject -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-left', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <input type="text" class="form-control requiredField" placeholder="Subject * Required" name="subject">
+                            </div>
+
+                        </div><!-- /Contact Subject -->
+
+
+
+                        <!-- Contact Message -->
+                        <div class="form-group" data-uk-scrollspy="{cls:'uk-animation-slide-right', delay:500, repeat: true}">
+
+                            <div class="controls">
+                                <textarea rows="10" class="form-control requiredField" placeholder="Your message * Required" name="message"></textarea>
+                            </div>
+
+                        </div><!-- /Contact Message -->
+
+                        <!-- Submit Button -->
+                        <div  data-uk-scrollspy="{cls:'uk-animation-slide-bottom', delay:500, repeat: true}">
+                            <button type="submit" class="btn btn-lg submit">Submit</button>
+                        </div>
+
+
+                    </form><!-- /form -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /reach-section -->
+
+
+        <!-- =========================================
+        Arrows Section
+        ========================================== -->
+        <!-- arrows-section -->
+        <section class="arrows-section">
+            <a href="#home-section" title="Home" class="scrollto">
+                <i class="fa fa-angle-up"></i>
+            </a>
+        </section><!-- /arrows-section -->
+
+        <!-- =========================================
+        Footer Section
+        ========================================== -->
+        <!-- footer-section -->
+        <section id="footer-section">
+
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+
+
+                    <!-- col-md-12 -->
+                    <div class="col-md-12">
+
+                        <!-- footer-social-icons -->
+                        <div class="footer-social-icons">
+                            <ul>
+                                <li>
+                                    <a href="#" title="Facebook"><i class="fa fa-facebook"></i></a>
+                                </li><li>
+                                    <a href="#" title="Twitter"><i class="fa fa-twitter"></i></a>
+                                </li><li>
+                                    <a href="#" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+                                </li><li>
+                                    <a href="#" title="Skype"><i class="fa fa-skype"></i></a>
+                                </li><li>
+                                    <a href="#" title="Google Plus"><i class="fa fa-google-plus"></i></a>
+                                </li>
+                            </ul>
+                        </div><!-- /footer-social-icons -->
+
+                    </div><!-- /col-md-12 -->
+
+
+                </div><!-- /row -->
+            </div><!-- /container -->
+
+        </section><!-- /footer-section -->
+
+
+
+
+        <!-- =========================================
+        java script
+        ========================================== -->
+        <script type="text/javascript" src="js/vendor/jquery-1.11.0.min.js"></script>
+        <script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/plugins/sliderTabs/jquery.sliderTabs.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.parallax-1.1.3.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.scrollto.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/jquery.fancybox.js"></script>
+        <script type="text/javascript" src="js/plugins/fancybox/helpers/jquery.fancybox-media.js"></script>
+        <script type="text/javascript" src="js/plugins/owl-carousel/owl.carousel.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.mlens-1.3.min.js"></script>
+        <script type="text/javascript" src="js/plugins/jquery.fitvids.js"></script>
+        <script type="text/javascript" src="js/plugins/flickrfeed/jflickrfeed.min.js"></script>
+        <script type="text/javascript" src="js/plugins/uikit/uikit.js"></script>
+        <script type="text/javascript" src="js/plugins/retina-1.1.0.js"></script>
+        <script type="text/javascript" src="js/app-on.js"></script>
+
+        <!--[if lt IE 9]>
+            <script src="js/plugins/html5shiv.js"></script>
+            <script src="js/plugins/selectivizr.js"></script>
+        <![endif]-->
+
+    </body><!-- /body -->
+</html><!-- /html -->
