@@ -2386,7 +2386,7 @@ ul.mini-feature-list li i {
 
 /* 18.2.3 Submit
 ---------------------------------------------------------------------------*/
-#subscribe button.submit {
+#mc-embedded-subscribe {
     width: 170px;
     height: 52px;
     color: #ffffff;
