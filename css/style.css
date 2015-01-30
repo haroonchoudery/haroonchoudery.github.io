@@ -2343,7 +2343,7 @@ ul.mini-feature-list li i {
 
 /* 18.2.2 Input
 ---------------------------------------------------------------------------*/
-#subscribe .form-control {
+#subscribe .email {
 	float: left;
     width: 500px;
     height: 52px;
