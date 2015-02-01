@@ -20,7 +20,7 @@ Author: Jthemes
 
 Notes:
     Color-1:            #76889a
-    Color-2:            #f29727
+    Color-2:            #ffc022
 
 
 1. General
@@ -715,12 +715,11 @@ strong { font-weight: 700; }
     margin-bottom: 20px;
 }
 #home-section-wrapper .buttons a {
-    color: #ffffff;
+    color: #000;
     font-size: 18px;
-    font-weight: 100;
+    font-weight: 500;
     line-height: 35px;
     margin: 0 30px 30px 0;
-    font-family: Helvetica, Arial, sans-serif;
 }
 #home-section-wrapper .buttons a:last-child { margin-right: 0; }
 #home-section-wrapper .buttons a i {
@@ -790,7 +789,7 @@ strong { font-weight: 700; }
 ---------------------------------------------------------------------------*/
 .feature-box-style-2 .feature-icon {
     float: left;
-    color: #f29727;
+    color: #ffc022;
     font-size: 30px;
 }
 
@@ -1428,7 +1427,7 @@ ul.mini-feature-list li i {
     content: '\f002';
     line-height: 170px;
     position: absolute;
-    background-color: #f29727;
+    background-color: #ffc022;
     font-family: 'FontAwesome';
 
     -webkit-border-radius: 6px;
@@ -1651,12 +1650,12 @@ ul.mini-feature-list li i {
 .faq-tabs ul.faq-tabs-btns li a:focus,
 .faq-tabs ul.faq-tabs-btns li a.active {
     color: #ffffff;
-    background-color: #f29727;
+    background-color: #ffc022;
 
-    -webkit-border: 1px solid #f29727;
-       -moz-border: 1px solid #f29727;
-         -o-border: 1px solid #f29727;
-            border: 1px solid #f29727;
+    -webkit-border: 1px solid #ffc022;
+       -moz-border: 1px solid #ffc022;
+         -o-border: 1px solid #ffc022;
+            border: 1px solid #ffc022;
 }
 .faq-tabs ul.faq-tabs-btns li a.active:after {
     width: 0;
@@ -2004,7 +2003,7 @@ ul.mini-feature-list li i {
 /* 14.2.6 Hover
 ---------------------------------------------------------------------------*/
 .price-table.featured,
-.price-table:hover { background-color: #f29727; }
+.price-table:hover { background-color: #ffc022; }
 
 .price-table.featured .table-name h1,
 .price-table.featured .table-desc p,
@@ -2032,7 +2031,7 @@ ul.mini-feature-list li i {
 
 .price-table.featured .table-price h1,
 .price-table:hover .table-price h1 {
-    color: #f29727;
+    color: #ffc022;
     font-weight: 700;
 }
 
@@ -2104,7 +2103,7 @@ ul.mini-feature-list li i {
     font-weight: 300;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.mini-post .post-title a:hover { color: #f29727; }
+.mini-post .post-title a:hover { color: #ffc022; }
 
 /* 15.2.4 Date
 ---------------------------------------------------------------------------*/
@@ -2826,7 +2825,7 @@ ul.mini-feature-list li i {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .post .post-title a { color: #2d373c; }
-.post .post-title a:hover { color: #f29727; }
+.post .post-title a:hover { color: #ffc022; }
 
 /* 22.2.5.5 Info
 ---------------------------------------------------------------------------*/
@@ -2860,7 +2859,7 @@ ul.mini-feature-list li i {
 .post .post-views:hover:after,
 .post .post-comment:hover span:first-child:after,
 .post .post-views:hover span:first-child:after {
-    color: #f29727;
+    color: #ffc022;
 }
 
 .post .post-author:after {
@@ -3067,7 +3066,7 @@ ul.mini-feature-list li i {
     line-height: 60px;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
-.widget.category .widget-content ul li a:hover { color: #f29727; }
+.widget.category .widget-content ul li a:hover { color: #ffc022; }
 .widget.category .widget-content ul li a span:first-child {
     float: left;
     text-transform: uppercase;
@@ -3321,7 +3320,7 @@ ul.mini-feature-list li i {
     display: inline-block;
 }
 .post-comments .comment-flag i {
-    color: #f29727;
+    color: #ffc022;
     margin-left: 10px;
     line-height: 12px;
 }
@@ -3357,7 +3356,7 @@ ul.mini-feature-list li i {
     position: absolute;
     font-family: 'FontAwesome';
 }
-.post-comments .comment-replay:hover { color: #f29727; }
+.post-comments .comment-replay:hover { color: #ffc022; }
 
 /* 25.1.11 Comment Form
 ---------------------------------------------------------------------------*/
@@ -3499,7 +3498,7 @@ ul.mini-feature-list li i {
 .btn.active:focus {
     outline: none;
 }
-.btn-nesto-home { background-color: #f29727; }
+.btn-nesto-home { background-color: #ffc022; }
 .btn-nesto-home:focus,
 .btn-nesto-home:active,
 .btn-nesto-home:hover {

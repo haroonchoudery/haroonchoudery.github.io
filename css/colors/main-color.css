@@ -6,7 +6,7 @@ Author: Jthemes
 
 
 Notes:
-    Color:            #ff3131
+    Color:            #ffc022
 
 
 */
@@ -27,7 +27,7 @@ Notes:
 .widget.category .widget-content ul li a:hover,
 .post-comments .comment-flag i,
 .post-comments .comment-replay:hover {
-    color: #ff3131;
+    color: #ffc022;
 }
 
 
@@ -36,16 +36,16 @@ Notes:
 .price-table.featured,
 .price-table:hover,
 .btn-nesto-home {
-    background-color: #ff3131;
+    background-color: #ffc022;
 }
 
 .faq-tabs ul.faq-tabs-btns li a:hover,
 .faq-tabs ul.faq-tabs-btns li a:focus,
 .faq-tabs ul.faq-tabs-btns li a.active {
-    background-color: #ff3131;
+    background-color: #ffc022;
 
-    -webkit-border: 1px solid #ff3131;
-       -moz-border: 1px solid #ff3131;
-         -o-border: 1px solid #ff3131;
-            border: 1px solid #ff3131;
+    -webkit-border: 1px solid #ffc022;
+       -moz-border: 1px solid #ffc022;
+         -o-border: 1px solid #ffc022;
+            border: 1px solid #ffc022;
 }
