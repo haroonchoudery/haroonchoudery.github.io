@@ -349,10 +349,10 @@ to {
 	box-shadow: 0 3px 0 rgb(24, 36, 87);
 }
 .btn-warning {
-	background-color: #0066FF;
+	background-color: #003973;
 	line-height: 1.8;
 	-webkit-box-shadow: 0 3px 0 rgb(214, 106, 18);
-	box-shadow: 0 3px 0 #0052CC;
+	box-shadow: 0 3px 0 #313131;
 }
 .btn-warning:hover, .btn-warning:focus, .btn-warning:active {
 	background-color: #3399FF;
