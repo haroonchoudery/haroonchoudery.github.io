@@ -3,7 +3,7 @@ $(document).ready(function() {
     $("#phpcontactform").submit(function(e) {
         e.preventDefault();
         var name = $("#name");
-        var email = $("#email");
+        //var email = $("#email");
         var mobile = $("#mobile");
         //var msg = $("#message");
         var flag = false;
@@ -14,7 +14,7 @@ $(document).ready(function() {
             return false;
         } else {
             name.closest(".form-group").removeClass("has-error").addClass("has-success");
-        } if (email.val() == "") {
+        /*} if (email.val() == "") {
             email.closest(".form-group").addClass("has-error");
             email.focus();
             flag = false;
@@ -31,7 +31,7 @@ $(document).ready(function() {
             flag = true;
 			$('input[type="submit"]').attr('disabled','disabled');
         }
-        var dataString = "name=" + name.val() + "&email=" + email.val() + "&mobile=" + mobile.val(); /* + "&msg=" + msg.val(); */
+        var dataString = "name=" + name.val() + /*"&email=" + email.val() +*/ "&mobile=" + mobile.val(); /* + "&msg=" + msg.val(); */
         $(".loading").fadeIn("slow").html("<p>Sending...</p>");
         $.ajax({
             type: "POST",
