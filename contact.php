@@ -2,7 +2,7 @@
 $name  = $_REQUEST["name"];
 $mobile = $_REQUEST["mobile"];
 //$msg   = $_REQUEST["msg"];
-$to    = "haroon.choudery@gmail.com"; // <--- Change email ID here
+$to    = "mycarxpert@leads.calldrip.com"; // <--- Change email ID here
 if (isset($email) && isset($name)) {
     $subject = "$name sent you a message via Gettel Landing Page";
 		$headers = "MIME-Version: 1.0" . "\r\n";
