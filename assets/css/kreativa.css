@@ -2040,3 +2040,11 @@ html[xmlns] .flexslider .slides {
   line-height: 2;
   text-transform: none;
 }
+
+section.contact-form {
+  padding-bottom: 0px;
+}
+
+section.contact-map-wrapper {
+  padding-bottom: 80px;
+}
