@@ -13,10 +13,9 @@ section.top-services{
 }
 
 .service-items .item .main-title h6 {
-	font-size: 24px;
+	font-size: 20px;
 	font-weight: bold;
 }
-
 
 .main-title h6 {
 	color: white;
@@ -27,4 +26,9 @@ section.top-services{
 
 div#phil-k-experience.section-heading {
 	padding-bottom: 30px;
+}
+
+i {
+	color: white;
+	text-align: center
 }
