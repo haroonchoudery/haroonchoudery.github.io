@@ -1,0 +1,30 @@
+.slider-btn a {
+	font-size: 20px;
+}
+
+.border-button a {
+	font-size: 20px;
+}
+
+section.top-services{
+	padding-top: 50px;
+	padding-bottom: 0px;
+	background-color: #021032;
+}
+
+.service-items .item .main-title h6 {
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+.main-title h6 {
+	color: white;
+}
+.description p {
+	color: white;
+}
+
+div#phil-k-experience.section-heading {
+	padding-bottom: 30px;
+}
