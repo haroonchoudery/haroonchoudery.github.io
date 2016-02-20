@@ -28,7 +28,7 @@ div#phil-k-experience.section-heading {
 	padding-bottom: 30px;
 }
 
-i {
+.item i {
 	color: white;
 	text-align: center
 }
