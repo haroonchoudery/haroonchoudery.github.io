@@ -32,3 +32,13 @@ div#phil-k-experience.section-heading {
 	color: black;
 	text-align: center
 }
+
+.page-title h3{
+	color: white;
+}
+
+/**
+div.item.col-md-3{
+	border: 1px solid;
+	border-radius: 25px;
+}
