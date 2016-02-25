@@ -9,7 +9,7 @@
 section.top-services{
 	padding-top: 50px;
 	padding-bottom: 0px;
-	background-color: #021032;
+	background-color: #e1e5f0;
 }
 
 .service-items .item .main-title h6 {
@@ -18,10 +18,10 @@ section.top-services{
 }
 
 .main-title h6 {
-	color: white;
+	color: black;
 }
 .description p {
-	color: white;
+	color: black;
 }
 
 div#phil-k-experience.section-heading {
@@ -29,6 +29,6 @@ div#phil-k-experience.section-heading {
 }
 
 .item i {
-	color: white;
+	color: black;
 	text-align: center
 }
