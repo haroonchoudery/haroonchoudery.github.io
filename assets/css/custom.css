@@ -37,6 +37,13 @@ div#phil-k-experience.section-heading {
 	color: white;
 }
 
+.info-icons li {
+	font-size: 18px;
+}
+.info-icons ul li a {
+	font-size: 18px;
+}
+
 /**
 div.item.col-md-3{
 	border: 1px solid;
